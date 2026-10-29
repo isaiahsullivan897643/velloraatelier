@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Vellora Atelier</title>
+
+  <!-- Favicon matching the brand monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23191516'/%3E%3Cpath d='M35 34 C35 24, 65 24, 65 34' stroke='%23C5A059' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Cpath d='M25 40 L30 78 C30 82, 34 85, 38 85 L62 85 C66 85, 70 82, 70 78 L75 40 Z' fill='%23C5A059'/%3E%3Cpath d='M42 47 L50 67 L58 47' stroke='%23191516' stroke-width='4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Montserrat"', 'sans-serif'],
+          },
+          colors: {
+            vellora: {
+              cream: '#FAF7F2',
+              sand: '#F3EDE2',
+              gold: '#C5A059',
+              goldHover: '#B08B46',
+              noir: '#191516',
+              espresso: '#2B2321',
+              wine: '#522026',
+              muted: '#766D67',
+              border: '#E8DFD3'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF7F2;
+      color: #191516;
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-vellora-cream text-vellora-noir antialiased selection:bg-vellora-gold selection:text-white flex flex-col min-h-screen justify-between">
+
+  <!-- Notification Toast -->
+  <div id="toast" class="fixed top-24 right-5 z-50 transform translate-x-full transition-transform duration-300 ease-in-out bg-vellora-noir text-white px-5 py-4 rounded-xl shadow-2xl flex items-center gap-3 border border-stone-700">
+    <i class="fa-solid fa-gem text-vellora-gold text-lg"></i>
+    <span id="toast-message" class="text-xs sm:text-sm font-medium tracking-wide">Item added to cart</span>
+  </div>
+
+  <!-- Announcement Bar -->
+  <div class="bg-vellora-noir text-vellora-gold text-[11px] sm:text-xs py-2 px-4 text-center tracking-widest uppercase font-medium border-b border-vellora-gold/20">
+    <span>Complimentary US Continental Express Shipping & Signature Gift Packaging On Orders Over $150 USD</span>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-vellora-cream/90 backdrop-blur-md border-b border-vellora-border/70 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="index.html#home" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-full bg-vellora-noir border border-vellora-gold/60 flex items-center justify-center text-vellora-gold shadow-sm group-hover:scale-105 transition-transform duration-300">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9h12v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9z"></path>
+              <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+              <path d="M10 13l2 3 2-3"></path>
+            </svg>
+          </div>
+          <div>
+            <span class="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-vellora-noir uppercase block leading-none">VELLORA</span>
+            <span class="text-[9px] tracking-[0.3em] uppercase text-vellora-gold font-semibold block mt-1">Atelier Paris • New York</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-stone-700">
+          <a href="index.html#home" class="hover:text-vellora-gold transition-colors">Home</a>
+          <a href="index.html#silhouettes" class="hover:text-vellora-gold transition-colors">Silhouettes</a>
+          <a href="index.html#catalog" class="hover:text-vellora-gold transition-colors">Catalog</a>
+          <a href="index.html#craftsmanship" class="hover:text-vellora-gold transition-colors">Craftsmanship</a>
+          <a href="index.html#press" class="hover:text-vellora-gold transition-colors">Stories</a>
+          <a href="index.html#faq" class="hover:text-vellora-gold transition-colors">Care & FAQ</a>
+          <a href="index.html#contact" class="hover:text-vellora-gold transition-colors">Concierge</a>
+        </nav>
+
+        <!-- Right Quick Actions -->
+        <div class="flex items-center gap-4">
+          <div class="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-stone-600 bg-white px-3 py-1.5 rounded-full border border-vellora-border shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>USD ($)</span>
+          </div>
+
+          <button id="cart-btn" class="relative p-2.5 rounded-full hover:bg-stone-200/60 transition-colors" aria-label="Shopping Bag">
+            <i class="fa-solid fa-bag-shopping text-xl text-vellora-noir"></i>
+            <span id="cart-badge" class="absolute top-1 right-1 w-5 h-5 bg-vellora-gold text-white text-[11px] font-bold rounded-full flex items-center justify-center scale-0 transition-transform">0</span>
+          </button>
+
+          <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-lg text-vellora-noir hover:bg-stone-200/60 transition-colors" aria-label="Open Navigation Menu">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-vellora-cream border-b border-vellora-border px-6 py-5 space-y-4 shadow-xl">
+      <a href="index.html#home" class="block text-sm font-semibold tracking-wider uppercase text-stone-800 hover:text-vellora-gold">Home</a>
+      <a href="index.html#silhouettes" class="block text-sm font-semibold tracking-wider uppercase text-stone-800 hover:text-vellora-gold">Silhouettes</a>
+      <a href="index.html#catalog" class="block text-sm font-semibold tracking-wider uppercase text-stone-800 hover:text-vellora-gold">Catalog</a>
+      <a href="index.html#craftsmanship" class="block text-sm font-semibold tracking-wider uppercase text-stone-800 hover:text-vellora-gold">Craftsmanship</a>
+      <a href="index.html#press" class="block text-sm font-semibold tracking-wider uppercase text-stone-800 hover:text-vellora-gold">Stories & Press</a>
+      <a href="index.html#faq" class="block text-sm font-semibold tracking-wider uppercase text-stone-800 hover:text-vellora-gold">Care & FAQ</a>
+      <a href="index.html#contact" class="block text-sm font-semibold tracking-wider uppercase text-stone-800 hover:text-vellora-gold">Concierge Desk</a>
+    </div>
+  </header>
+
+  <!-- Slide-Over Shopping Cart Drawer -->
+  <div id="cart-drawer-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 hidden opacity-0 transition-opacity duration-300">
+    <div id="cart-drawer" class="absolute top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 ease-in-out">
+      <div class="p-6 border-b border-stone-200 flex items-center justify-between bg-vellora-cream">
+        <div>
+          <h3 class="font-serif text-2xl font-bold text-vellora-noir">Your Shopping Bag</h3>
+          <p class="text-[11px] text-stone-500 tracking-wider uppercase">Curated Handbags & Goods (USD)</p>
+        </div>
+        <button id="close-cart-btn" class="text-stone-400 hover:text-stone-800 p-2 text-xl">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-4">
+        <p class="text-stone-500 text-center py-12 text-xs uppercase tracking-widest">Your shopping bag is currently empty.</p>
+      </div>
+
+      <div class="p-6 border-t border-stone-200 bg-vellora-cream/60">
+        <div class="flex justify-between items-center text-stone-600 text-xs mb-2">
+          <span>Standard US Shipping:</span>
+          <span class="text-emerald-700 font-semibold" id="cart-shipping-text">FREE over $150 USD</span>
+        </div>
+        <div class="flex justify-between items-center mb-5 text-vellora-noir">
+          <span class="font-serif text-lg font-bold">Subtotal:</span>
+          <span id="cart-total-price" class="font-serif text-2xl font-bold text-vellora-noir">$0.00</span>
+        </div>
+        <button onclick="showToast('Thank you! Proceeding to secure US payment gateway.')" class="w-full bg-vellora-noir hover:bg-black text-white font-semibold py-4 rounded-xl text-xs uppercase tracking-widest transition-all shadow-md hover:shadow-lg">
+          Secure Checkout
+        </button>
+        <p class="text-[10px] text-center text-stone-500 mt-3 flex items-center justify-center gap-2">
+          <i class="fa-solid fa-lock text-stone-400"></i> Encrypted 256-Bit SSL Checkout • All Prices in USD
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Legal Content -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="text-center mb-12">
+      <span class="px-3.5 py-1 text-[11px] font-semibold tracking-widest uppercase text-vellora-gold bg-vellora-sand rounded-full border border-vellora-border">
+        Client Trust & Discretion
+      </span>
+      <h1 class="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-vellora-noir mt-4">Privacy Policy</h1>
+      <p class="text-xs sm:text-sm text-vellora-muted mt-3">Effective Date: October 2026 • Historic Core, Los Angeles, CA, USA</p>
+    </div>
+
+    <div class="bg-white border border-vellora-border rounded-2xl p-6 sm:p-10 space-y-8 shadow-sm">
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-vellora-noir mb-3 flex items-center gap-2.5">
+          <i class="fa-solid fa-shield-halved text-vellora-gold text-base"></i> 1. Scope & Discretion
+        </h2>
+        <p class="text-sm leading-relaxed text-vellora-muted">
+          Vellora Atelier LLC ("we," "our," or "us"), operating ateliers at <strong>548 S Spring Street, Suite 402, Historic Core, Los Angeles, CA 90013, USA</strong>, is dedicated to protecting client privacy with the same meticulous standards applied to our handcrafted leather goods. This Privacy Policy details how personal information is received, processed, and safeguarded.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-vellora-noir mb-3 flex items-center gap-2.5">
+          <i class="fa-solid fa-feather-pointed text-vellora-gold text-base"></i> 2. Information We Collect
+        </h2>
+        <p class="text-sm leading-relaxed text-vellora-muted mb-3">
+          To fulfill luxury handbag orders priced in <strong>United States Dollars ($ USD)</strong>, monogram bespoke pieces, and coordinate courier deliveries, we collect:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 text-sm text-vellora-muted">
+          <li><strong>Client Identification:</strong> Full name, billing and physical delivery addresses, and personal email address.</li>
+          <li><strong>Bespoke Customization Data:</strong> Initials, blind embossing specifications, and custom hardware preferences requested during checkout or concierge consultation.</li>
+          <li><strong>Payment Processing:</strong> Tokenized payment credentials encrypted via PCI-DSS compliant payment gateways. We never store credit or debit card numbers on our servers.</li>
+          <li><strong>Atelier Concierge Inquiries:</strong> Styling correspondence, leather restoration requests, and product inquiries.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-vellora-noir mb-3 flex items-center gap-2.5">
+          <i class="fa-solid fa-box text-vellora-gold text-base"></i> 3. White-Glove Logistics & Third Parties
+        </h2>
+        <p class="text-sm leading-relaxed text-vellora-muted">
+          We only share essential shipping details with insured premium carriers (FedEx, UPS) for signature-required deliveries and dispatch notifications. <strong>We do not sell, rent, or monetize client records to third-party ad brokers or external marketing agencies.</strong>
+        </p>
+      </section>
+
+      <section>
+        <h2 class="font-serif text-2xl font-bold text-vellora-noir mb-3 flex items-center gap-2.5">
+          <i class="fa-solid fa-scale-balanced text-vellora-gold text-base"></i> 4. California Consumer Privacy (CCPA) Rights
+        </h2>
+        <p class="text-sm leading-relaxed text-vellora-muted">
+          Under the California Consumer Privacy Act (CCPA) and US privacy statutes, clients have the right to request access to the personal data we store, request correction of delivery profiles, or demand complete deletion of client records once manufacturing and return guarantee periods conclude.
+        </p>
+      </section>
+
+      <section class="border-t border-vellora-border pt-6">
+        <h2 class="font-serif text-2xl font-bold text-vellora-noir mb-3 flex items-center gap-2.5">
+          <i class="fa-solid fa-envelope text-vellora-gold text-base"></i> 5. Concierge Privacy Desk
+        </h2>
+        <p class="text-sm text-vellora-muted leading-relaxed">
+          For privacy inquiries, bespoke data requests, or deletion notices, contact our concierge desk directly:
+        </p>
+        <div class="mt-4 p-5 rounded-xl bg-vellora-sand/70 border border-vellora-border flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <div class="font-bold text-vellora-noir font-serif text-lg">Vellora Atelier Privacy Desk</div>
+            <div class="text-xs text-vellora-muted">548 S Spring Street, Suite 402, Historic Core, Los Angeles, CA 90013, USA</div>
+            <div class="text-xs text-vellora-gold font-semibold mt-1">concierge@velloraatelier.com • +1 (213) 555-0182</div>
+          </div>
+          <a href="mailto:concierge@velloraatelier.com?subject=Privacy%20Desk%20Inquiry" class="px-5 py-2.5 rounded-xl bg-vellora-noir hover:bg-black text-white text-xs font-semibold uppercase tracking-widest text-center transition">
+            Contact Concierge
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-vellora-noir text-stone-300 pt-16 pb-12 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-stone-800">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2">
+          <a href="index.html#home" class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-full bg-vellora-gold flex items-center justify-center text-vellora-noir font-serif font-bold">
+              V
+            </div>
+            <span class="font-serif text-2xl font-bold tracking-widest text-white uppercase">VELLORA <span class="text-vellora-gold font-sans text-xs">ATELIER</span></span>
+          </a>
+          <p class="text-stone-400 text-xs sm:text-sm leading-relaxed max-w-sm mb-6">
+            Sculptural luxury ladies handbags, pochettes, and small leather accessories handcrafted in ethical European artisan workshops.
+          </p>
+          <div class="text-xs text-stone-400 space-y-1.5">
+            <p><i class="fa-solid fa-location-dot text-vellora-gold mr-2"></i> 548 S Spring Street, Suite 402, Los Angeles, CA 90013, USA</p>
+            <p><i class="fa-solid fa-envelope text-vellora-gold mr-2"></i> concierge@velloraatelier.com</p>
+            <p><i class="fa-solid fa-phone text-vellora-gold mr-2"></i> +1 (213) 555-0182</p>
+          </div>
+        </div>
+
+        <!-- Collections Links -->
+        <div>
+          <h4 class="font-serif text-white font-bold text-base mb-4 tracking-wider">Silhouettes</h4>
+          <ul class="space-y-2.5 text-xs tracking-wide">
+            <li><a href="index.html#silhouettes" class="hover:text-vellora-gold transition-colors">Structured Totes</a></li>
+            <li><a href="index.html#silhouettes" class="hover:text-vellora-gold transition-colors">Crossbody & Minis</a></li>
+            <li><a href="index.html#silhouettes" class="hover:text-vellora-gold transition-colors">Shoulder Bags</a></li>
+            <li><a href="index.html#silhouettes" class="hover:text-vellora-gold transition-colors">Evening Clutches</a></li>
+            <li><a href="index.html#catalog" class="hover:text-vellora-gold transition-colors">Cardholders & SLGs</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Care & Policies -->
+        <div>
+          <h4 class="font-serif text-white font-bold text-base mb-4 tracking-wider">Client Care</h4>
+          <ul class="space-y-2.5 text-xs tracking-wide">
+            <li>
+              <a href="privacy-policy.html" class="text-vellora-gold font-semibold transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-shield-cat text-vellora-gold text-[10px]"></i> Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="refund-policy.html" class="hover:text-vellora-gold transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-arrow-rotate-left text-stone-500 text-[10px]"></i> Refund & Return Policy
+              </a>
+            </li>
+            <li>
+              <a href="terms-and-conditions.html" class="hover:text-vellora-gold transition-colors flex items-center gap-1.5">
+                <i class="fa-solid fa-file-shield text-stone-500 text-[10px]"></i> Terms & Conditions
+              </a>
+            </li>
+            <li><a href="index.html#faq" class="hover:text-vellora-gold transition-colors">Leather Maintenance</a></li>
+            <li><a href="index.html#contact" class="hover:text-vellora-gold transition-colors">Concierge Desk</a></li>
+          </ul>
+        </div>
+
+        <!-- Private Society Newsletter -->
+        <div>
+          <h4 class="font-serif text-white font-bold text-base mb-4 tracking-wider">Private Society</h4>
+          <p class="text-stone-400 text-xs mb-4 leading-relaxed">
+            Receive private preview access to seasonal colorway drops and complimentary signature initials embossing.
+          </p>
+          <form onsubmit="event.preventDefault(); showToast('Private invitation requested. Thank you.'); this.reset();" class="space-y-2">
+            <input 
+              type="email" 
+              required 
+              placeholder="Enter your email" 
+              class="w-full px-3.5 py-2.5 rounded-lg bg-stone-900 border border-stone-700 text-xs text-white placeholder-stone-500 focus:outline-none focus:border-vellora-gold"
+            >
+            <button type="submit" class="w-full py-2.5 bg-vellora-gold hover:bg-vellora-goldHover text-white rounded-lg text-xs font-semibold tracking-widest uppercase transition-colors">
+              Request Invitation
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Bottom Policy Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-4">
+        <p>&copy; <span id="current-year"></span> Vellora Atelier LLC. All rights reserved. Prices denominated in USD ($).</p>
+        <div class="flex gap-4">
+          <a href="privacy-policy.html" class="text-vellora-gold underline">Privacy Policy</a>
+          <a href="refund-policy.html" class="hover:text-vellora-gold underline">Refund Policy</a>
+          <a href="terms-and-conditions.html" class="hover:text-vellora-gold underline">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Drawer and Mobile Navigation Logic
+    const cartBtn = document.getElementById('cart-btn');
+    const closeCartBtn = document.getElementById('close-cart-btn');
+    const cartDrawerOverlay = document.getElementById('cart-drawer-overlay');
+    const cartDrawer = document.getElementById('cart-drawer');
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function openCart() {
+      cartDrawerOverlay.classList.remove('hidden');
+      setTimeout(() => {
+        cartDrawerOverlay.classList.remove('opacity-0');
+        cartDrawer.classList.remove('translate-x-full');
+      }, 10);
+    }
+
+    function closeCart() {
+      cartDrawer.classList.add('translate-x-full');
+      cartDrawerOverlay.classList.add('opacity-0');
+      setTimeout(() => cartDrawerOverlay.classList.add('hidden'), 300);
+    }
+
+    cartBtn.addEventListener('click', openCart);
+    closeCartBtn.addEventListener('click', closeCart);
+    cartDrawerOverlay.addEventListener('click', (e) => {
+      if (e.target === cartDrawerOverlay) closeCart();
+    });
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').textContent = msg;
+      toast.classList.remove('translate-x-full');
+      setTimeout(() => toast.classList.add('translate-x-full'), 3000);
+    }
+  </script>
+</body>
+</html>
